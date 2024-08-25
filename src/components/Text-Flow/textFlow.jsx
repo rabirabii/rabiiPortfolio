@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import "./textFlow.css";
 import { useScroll, useTransform, motion } from "framer-motion";
-import Lenis from "lenis";
+
 const TextFlow = () => {
   const container = useRef();
   const { scrollYProgress } = useScroll({
@@ -11,14 +11,13 @@ const TextFlow = () => {
   });
 
   useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
+    // Comment out or remove the Lenis initialization
+    // const lenis = new Lenis();
+    // function raf(time) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
+    // requestAnimationFrame(raf);
   }, []);
 
   return (
@@ -34,7 +33,7 @@ const TextFlow = () => {
 };
 
 const Slide = (props) => {
-  const direction = props.direction == "left" ? -1 : 1;
+  const direction = props.direction === "left" ? -1 : 1;
   const translateX = useTransform(
     props.progress,
     [0, 1],
@@ -50,7 +49,7 @@ const Slide = (props) => {
 const Phrase = () => {
   return (
     <div className="phrase">
-      <p data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+      <p>
         JAVASCRIPT • REACT • VUE • JAVASCRIPT • REACT • VUE • JAVASCRIPT • REACT
         • VUE • JAVASCRIPT • REACT • VUE • JAVASCRIPT • REACT • VUE • JAVASCRIPT
         • REACT • VUE
@@ -58,4 +57,5 @@ const Phrase = () => {
     </div>
   );
 };
+
 export default TextFlow;

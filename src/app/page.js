@@ -7,6 +7,7 @@ import About from "@/components/About/About";
 import Title from "@/components/open/Title";
 import TextFlow from "@/components/Text-Flow/textFlow";
 import Work from "@/components/Work/Work";
+import Footer from "@/components/Contact/Contact";
 
 const Section = ({ children, id }) => {
   const ref = useRef(null);

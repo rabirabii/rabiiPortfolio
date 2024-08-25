@@ -6,14 +6,28 @@
   padding: 120px 50px 0;
   border: black 3px solid;
   box-shadow: black 1px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
   display: flex;
-  width: 100%;
+  font-family: "TTtrailer";
   justify-content: space-between;
-  font-size: 12px;
-  gap: 40px;
+  font-size: 2vw;
+}
+.footer a {
+  transition: 0.34s;
+}
+.footer a:nth-child(1):hover {
+  color: #0a66c2;
+}
+.footer a:nth-child(2):hover {
+  color: #c13584;
+}
+.footer a:nth-child(3):hover {
+  color: #333;
 }
 
 .sideNav li {

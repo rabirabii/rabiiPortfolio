@@ -23,22 +23,22 @@ const Card = ({
     offset: ["start end", "start start"],
   });
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
+  // const imageScale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
-  const y = useTransform(progress, range, [0, -100 * i]);
-  const imageAnimation = {
-    rest: { scale: 1.05 },
-    hover: { scale: 1 },
-  };
+  // const y = useTransform(progress, range, [0, -100 * i]);
+  // const imageAnimation = {
+  //   rest: { scale: 1.05 },
+  //   hover: { scale: 1 },
+  // };
   const cardColorClass = `card-color-${(i % 3) + 1}`;
   return (
     <motion.div
       className={`webSite ${cardColorClass}`}
-      ref={container}
+      // ref={container}
       style={{
         position: "sticky",
-        top: `${100 + i * 50}px`,
-        y,
+        // top: `${100 + i * 50}px`,
+        // y,
       }}
     >
       <div>
@@ -70,8 +70,8 @@ const Card = ({
           </div>
           <motion.div
             className="right siteView"
-            style={{ scale: imageScale }}
-            variants={imageAnimation}
+            // style={{ scale: imageScale }}
+            // variants={imageAnimation}
           >
             <Image src={image} alt={title} width={500} height={500} />
           </motion.div>

@@ -1,30 +1,16 @@
 "use client";
-import { usePathname } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Footer from "./footer";
-import LinkStyle from "./Link";
-import Curve from "./curve";
+import Link from "next/link";
 import "./nav.css";
 import { menuSlide } from "./anim";
 
 const navItems = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Work",
-    href: "/work",
-  },
-  {
-    title: "About",
-    href: "/about",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
+  { title: "Home", href: "/" },
+  { title: "Work", href: "/work" },
+  { title: "About", href: "/about" },
+  { title: "Contact", href: "/contact" },
 ];
 
 const Nav = ({ isOpen }) => {
@@ -68,14 +54,13 @@ const Nav = ({ isOpen }) => {
         <ul>
           {navItems.map((data, index) => (
             <li key={index}>
-              <a href={data.href}>{data.title}</a>
+              <Link href={data.href}>{data.title}</Link>
             </li>
           ))}
         </ul>
         <div className="navBg"></div>
+        <Footer />
       </div>
-
-      <Footer />
     </motion.nav>
   );
 };

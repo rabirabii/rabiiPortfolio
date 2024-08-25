@@ -11,7 +11,7 @@ const Title = ({ id }) => {
   const textContainerRef = useRef(null);
   const { x, y } = useMousePosition(textContainerRef);
   const size = isHovered ? 200 : 20;
-  console.log(x, y);
+
   useEffect(() => {
     const svg = svgRef.current;
     const circles = svg.querySelectorAll("circle");

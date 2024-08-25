@@ -47,7 +47,7 @@
 .site {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, #f2f5f8 50%);
 }
 .site:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
@@ -104,7 +104,7 @@
 }
 
 .webSite .site .siteTxt .btns > a {
-  width: 25%;
+  width: 18%;
   color: #000;
   display: inline-block;
   padding: 12px 24px;
@@ -113,7 +113,7 @@
   font-weight: bold;
   background-color: #feffb8;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.34s;
@@ -121,6 +121,7 @@
   position: relative;
   z-index: 11;
   transition: all 0.3s ease;
+  font-family: "TTtrailer";
 }
 
 .webSite .site .siteTxt .btns a .btnFlow {
@@ -178,14 +179,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.webSite.card-color-1 .siteView {
-  background-color: #bdffd9;
-}
-.webSite.card-color-1 .siteView .colorBox {
+/* .webSite.card-color-1 .siteView {
+  background-color: #e9f5ee;
+} */
+/* .webSite.card-color-1 .siteView .colorBox {
   background-color: #e6e6fa;
 }
 .webSite.card-color-2 .siteView {
-  background-color: #ffdab9;
+  background-color: #f8ebe0;
 }
 .webSite.card-color-2 .siteView .colorBox {
   background-color: #b0e0e6;
@@ -195,4 +196,4 @@
 }
 .webSite.card-color-3 .siteView .colorBox {
   background-color: #fffce2;
-}
+} */
