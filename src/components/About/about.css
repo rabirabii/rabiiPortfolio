@@ -1,0 +1,88 @@
+.about .profile .aboutTxt .aboutSpan {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 15px 40px 10px;
+  margin: 25px 0;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about .profile .aboutTxt p {
+  width: 100%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about .profile1 {
+  width: 34vw;
+  float: left;
+  position: relative;
+}
+
+.about .profile1 .aboutImgs .imgs img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.about .profile2 {
+  width: 34vw;
+  float: right;
+  margin-top: 100px;
+  position: relative;
+}
+
+.about .profile2 .aboutImgs img {
+  width: 100%;
+
+  position: relative;
+}
+
+.about .profile2 .aboutImgs .classIcon {
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  z-index: 9999;
+}
+
+.about .profile3 {
+  width: 100%;
+  margin-top: 100px;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.about .profile3 .aboutImgs {
+  position: relative;
+}
+
+.about .profile3 .aboutImgs .imgs {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.about .profile3 .aboutImgs .imgs img {
+  width: 100%;
+}
+
+/* Remove extra space after the last word in a line */
+.body_p p:last-child:after {
+  content: "";
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  transition: width 0.5s;
+  border-radius: 5px;
+  background: white;
+}

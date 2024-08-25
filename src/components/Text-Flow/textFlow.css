@@ -1,0 +1,10 @@
+.textFlow {
+  overflow: hidden;
+  font-family: "TTtrailer";
+}
+
+.phrase {
+  font-size: 4vw;
+  white-space: nowrap;
+  line-height: 0.8;
+}

@@ -1,0 +1,198 @@
+#webSite .theme .themeBG {
+  background: url("../../../public/profile3.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 5px #e8c5e5;
+}
+#webSite .theme .themeBG h2 {
+  font-size: 13vw;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#webSite .row {
+  height: auto;
+  min-height: 100vh;
+}
+.webSite {
+  width: 100%;
+  height: 90vh;
+  padding: 50px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+.cards-container {
+  position: relative;
+  height: calc(100vh * var(--num-of-cards));
+}
+.webSite .site {
+  display: flex;
+  box-sizing: border-box;
+  height: 75vh;
+  margin-bottom: 10vh;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.webSite .left {
+  border-radius: 50px 0 50px;
+  height: 100%;
+}
+.webSite .right {
+  border-radius: 0 50px 50px 0;
+  height: 100%;
+}
+.site {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.site:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.webSite .site h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.webSite .site .siteTxt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #fff;
+  padding: 100px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.webSite .site .webTit {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.webSite .site .webIntro {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+.webSite .site .siteTxt .circle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.webSite .site .siteTxt .circle label {
+  font-size: 20px;
+}
+.webSite .site .siteTxt .btns {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.webSite .site .siteTxt .btns > a {
+  width: 25%;
+  color: #000;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: none;
+  font-weight: bold;
+  background-color: #feffb8;
+  font-weight: bold;
+  font-size: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.34s;
+  overflow: hidden;
+  position: relative;
+  z-index: 11;
+  transition: all 0.3s ease;
+}
+
+.webSite .site .siteTxt .btns a .btnFlow {
+  display: inline-block;
+  position: relative;
+}
+
+.webSite .site .siteTxt .btns a:nth-child(1) .btnFlow::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-300%);
+}
+.webSite .site .siteTxt .btns a:nth-child(2) .btnFlow::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-200%);
+}
+
+.webSite .site .siteTxt .btns a:hover {
+  background-color: #000;
+  color: #feffb8;
+  transform: translateY((-2px));
+}
+.webSite .site .siteTxt .btns a:nth-child(1):hover .btnFlow {
+  animation: text-flow 2s linear infinite;
+}
+.webSite .site .siteTxt .btns a:nth-child(2):hover .btnFlow {
+  animation: text-flow 2s linear infinite;
+}
+.webSite .siteView {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.webSite .siteView .colorBox {
+  display: inline-block;
+  width: 90%;
+  height: 25vw;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+.webSite .siteView img {
+  width: 110%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.webSite.card-color-1 .siteView {
+  background-color: #bdffd9;
+}
+.webSite.card-color-1 .siteView .colorBox {
+  background-color: #e6e6fa;
+}
+.webSite.card-color-2 .siteView {
+  background-color: #ffdab9;
+}
+.webSite.card-color-2 .siteView .colorBox {
+  background-color: #b0e0e6;
+}
+.webSite.card-color-3 .siteView {
+  background-color: #fffacd;
+}
+.webSite.card-color-3 .siteView .colorBox {
+  background-color: #fffce2;
+}

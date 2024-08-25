@@ -1,0 +1,57 @@
+.title {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 10vw;
+  font-weight: bold;
+  letter-spacing: -15px;
+}
+
+.title .titleText {
+  font-size: 24px;
+  margin-top: -50px;
+  line-height: 1.5;
+  position: relative;
+  float: left;
+}
+
+.title .titleText span {
+  color: #9c4d9c;
+  font-style: italic;
+}
+
+.title .titleText .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffdab9;
+  color: black;
+  -webkit-mask-image: url("../../../public/mask.svg");
+  mask-image: url("../../../public/mask.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  float: left;
+}
+
+.title .titleText .mask p {
+  padding: 20px;
+  margin: 0;
+}
+
+.canvas {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

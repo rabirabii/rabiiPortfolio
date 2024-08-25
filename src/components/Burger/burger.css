@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerLeft .headerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #feffb8;
+  width: 65px;
+  height: 65px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.headerLeft .headerIcon .burger {
+  width: 100%;
+  position: relative;
+}
+
+.headerLeft .headerIcon .burger::after,
+.headerLeft .headerIcon .burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: transform 0.35s;
+}
+
+.headerLeft .headerIcon .burger::after {
+  top: -5px;
+}
+
+.headerLeft .headerIcon .burger::before {
+  top: 5px;
+}
+
+.headerLeft .headerIcon.burgerActive .burger::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.headerLeft .headerIcon.burgerActive .burger::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.headerRight {
+  position: relative;
+}
+
+.headerRight > span {
+  display: inline-block;
+  padding: 15px 30px 10px;
+  text-align: center;
+  word-spacing: 4px;
+  background-color: #feffb8;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: 0.35s;
+  overflow: hidden;
+}
+.headerRight > span.on {
+  overflow: hidden;
+  transition: 0.35s;
+}
+.headerRight > span span {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.headerRight > span span::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-200%);
+}
+
+.headerRight > span:hover {
+  background-color: #000;
+  color: #feffb8;
+}
+
+.headerRight > span.on {
+  animation: text-flow 2s linear infinite;
+}
+
+.headerRight > span:hover span {
+  animation: text-flow 2s linear infinite;
+}
+
+.headerRight > span.on span::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-200%);
+}
+
+.headerRight > span.on {
+  background-color: #000;
+  color: #feffb8;
+}
+.headerRight > span.on span {
+  animation: text-flow 2s linear infinite;
+}

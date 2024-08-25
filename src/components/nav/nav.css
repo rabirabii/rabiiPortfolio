@@ -1,0 +1,81 @@
+.sideNav {
+  width: 30%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  padding: 120px 50px 0;
+  border: black 3px solid;
+  box-shadow: black 1px 5px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 40px;
+}
+
+.sideNav li {
+  color: black;
+  text-transform: uppercase;
+  font-family: "TTtrailer";
+  margin-top: -20px;
+  padding-left: 5vw;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.1;
+}
+.sideNav li a {
+  color: black;
+  font-size: 5vw;
+  position: relative;
+  z-index: 10;
+  transition: 0.34s;
+}
+.sideNav li a::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.34s;
+}
+.sideNav li a:hover {
+  color: #feec01;
+}
+.sideNav li a:hover::after {
+  width: 110%;
+}
+.sideNav li::before {
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "GmarketSans";
+  margin-right: 30px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+.sideNav li:nth-child(1):before {
+  content: "01";
+}
+.sideNav li:nth-child(2):before {
+  content: "02";
+}
+.sideNav li:nth-child(3):before {
+  content: "03";
+}
+.sideNav li:nth-child(4):before {
+  content: "04";
+}
+.sideNav li:nth-child(5):before {
+  content: "05";
+}
+.sideNav li:nth-child(6):before {
+  content: "06";
+}
