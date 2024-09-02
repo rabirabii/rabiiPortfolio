@@ -35,7 +35,7 @@ const Work = ({ id }) => {
         className="row "
         ref={container}
         style={{
-          height: `${projects.length * 100}vh`,
+          // height: `${projects.length * 100}vh`,
           position: "relative",
         }}
       >

@@ -42,7 +42,7 @@ const Card = ({
             transformOrigin: "center top",
             y: isHovered ? -10 : 0,
             transition: "all 0.3s ease",
-            filter: "drop-shadow(0px 20px 10px #0008)",
+            filter: "drop-shadow(0px 20px 10px #E0BBE4 )",
           }}
         >
           <div className="left siteTxt">

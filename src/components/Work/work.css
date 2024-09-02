@@ -33,7 +33,12 @@
   box-sizing: border-box;
   height: 75vh;
   margin-bottom: 10vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optionally add a border */
+  box-shadow: 0 4px 6px rgba(224, 187, 228, 0.4);
 }
 
 .webSite .left {
@@ -170,9 +175,6 @@
   bottom: 100px;
   right: 0;
   border-radius: 50px 0 0 50px;
-  background-color: rgb(255 255 255 / 80%);
-  backdrop-filter: blur(10px);
-  backface-visibility: visible;
 }
 .webSite .siteView img {
   width: 110%;
