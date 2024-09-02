@@ -59,7 +59,9 @@ export default function Home() {
       <Section id="textflow">
         <TextFlow />
       </Section>
-      aaaa
+      <Section>
+        <About />
+      </Section>
       <Section id="webSite">
         <Work />
       </Section>

@@ -17,28 +17,19 @@ const Card = ({
   range,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "start start"],
-  });
 
-  // const imageScale = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
-  // const y = useTransform(progress, range, [0, -100 * i]);
-  // const imageAnimation = {
-  //   rest: { scale: 1.05 },
-  //   hover: { scale: 1 },
-  // };
+
+  const imageAnimation = {
+    rest: { scale: 1.05 },
+    hover: { scale: 1 },
+  };
   const cardColorClass = `card-color-${(i % 3) + 1}`;
   return (
     <motion.div
       className={`webSite ${cardColorClass}`}
-      // ref={container}
       style={{
         position: "sticky",
-        // top: `${100 + i * 50}px`,
-        // y,
       }}
     >
       <div>
@@ -51,6 +42,7 @@ const Card = ({
             transformOrigin: "center top",
             y: isHovered ? -10 : 0,
             transition: "all 0.3s ease",
+            filter: "drop-shadow(0px 20px 10px #0008)",
           }}
         >
           <div className="left siteTxt">
@@ -68,11 +60,7 @@ const Card = ({
               </a>
             </div>
           </div>
-          <motion.div
-            className="right siteView"
-            // style={{ scale: imageScale }}
-            // variants={imageAnimation}
-          >
+          <motion.div className="right siteView" variants={imageAnimation}>
             <Image src={image} alt={title} width={500} height={500} />
           </motion.div>
         </motion.div>

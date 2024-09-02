@@ -20,7 +20,7 @@ const paragraph3 =
 const About = ({ id }) => {
   return (
     <section id={id}>
-      <div className="container">
+      <div className="container clearfix">
         <div className="row">
           <div className="about">
             <div className="profile profile1">

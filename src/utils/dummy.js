@@ -24,21 +24,4 @@ export const projects = [
     demoLink: "https://example.com/portfolio-demo",
     githubLink: "https://github.com/example/portfolio-website",
   },
-  {
-    title: "Social Media App",
-    description: "A social media platform with real-time messaging.",
-    intro:
-      "Developed a social media application that allows users to connect...",
-    image: "/profile4.jpg",
-    demoLink: "https://example.com/social-app-demo",
-    githubLink: "https://github.com/example/social-media-app",
-  },
-  {
-    title: "Blog Platform",
-    description: "A responsive blogging platform with content management.",
-    intro: "This project involved the development of a blogging platform...",
-    image: "/profile5.jpg",
-    demoLink: "https://example.com/blog-demo",
-    githubLink: "https://github.com/example/blog-platform",
-  },
 ];

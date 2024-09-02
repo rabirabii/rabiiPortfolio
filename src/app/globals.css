@@ -11,7 +11,7 @@
   height: 100%;
 }
 .container {
-  max-width: 1680px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
 }
@@ -19,7 +19,6 @@ html {
   max-width: 100%;
 }
 body {
-  max-width: 100%;
   position: relative;
 }
 
@@ -73,11 +72,11 @@ main {
 #about {
   padding: 200px 0 400px;
   background-color: #fff;
-  position: relative;
 }
 #webSite {
-  height: auto;
   width: 100%;
+  display: flex;
+  padding-bottom: 205vh;
 }
 #animation {
   background-color: #fff;

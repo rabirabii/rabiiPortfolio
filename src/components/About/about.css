@@ -9,6 +9,7 @@
   font-size: 20px;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Lato";
 }
 
 .about .profile .aboutTxt p {
@@ -52,7 +53,6 @@
   width: 100%;
   margin-top: 100px;
   float: left;
-  margin-bottom: 100px;
 }
 
 .about .profile3 .aboutImgs {
@@ -85,4 +85,10 @@
   transition: width 0.5s;
   border-radius: 5px;
   background: white;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

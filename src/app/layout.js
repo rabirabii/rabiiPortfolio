@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Burger from "@/components/Burger/burger";
+import Contact from "@/components/Contact/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Burger />
         {children}
+        <Contact />
       </body>
     </html>
   );
